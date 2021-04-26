@@ -27,18 +27,18 @@ class TicTacToe
 {
 	private:
 		/*
-		ataskiri until bawahkanan will be used later in the display(LinkedList *curCursor) 
-		method, curPlayer is the current player. 
+		char (ataskiri) until (char) bawahkanan will be used later in the 
+		display(LinkedList *curCursor) method, curPlayer is the current player. 
 		*/
 		char curPlayer, ataskiri, atas, ataskanan, tengahkiri, tengah, tengahkanan, bawahkiri, bawah, bawahkanan;
 		/*
-		int filled will be used as the checker when the board has been fully filled. When it 
+		(bool) filled will be used as the checker when the board has been fully filled. When it 
 		becomes true, it will tell the program that no one wins and the game is tie.
 		*/
-		int filled = false;
+		bool filled = false;
 		/*
-		Node *game below will store each values of all the boards from upper left to lower right,
-		then all of the values will be linked together using the LinkedList struct. 
+		(Node) *game below will store each values of all the boards from upper left to lower
+		right, then all of the values will be linked together using the LinkedList struct. 
 		*/
 		Node *game = new Node;
 		/*
@@ -47,8 +47,8 @@ class TicTacToe
 		*/
 		LinkedList *cursor = new LinkedList;
 		/*
-		head will store the first address of the list items, list will store the items, start
-		will be used as the iterator for the linked list. 
+		(LinkedList) head will store the first address of the list items, (LinkedList) list will
+		store the items, (LinkedList) start will be used as the iterator for the linked list. 
 		*/
 		LinkedList *head, *list, *start;
 		
